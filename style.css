@@ -1,0 +1,21 @@
+/*
+Theme Name: Terminal
+Theme URI: https://github.com/amd989/wordpress-theme-terminal
+Author: amd989
+Author URI: https://github.com/amd989
+Description: A minimal, retro-terminal aesthetic WordPress theme. Independent WordPress implementation inspired by panr's Hugo theme of the same name — all PHP templates, customizer integration, meta boxes, shortcodes, and WordPress wiring are original. Features a duotone color scheme driven by CSS custom properties, Fira Code typography, Prism.js syntax highlighting, a customizer-driven accent palette, table of contents, reading time, cover images, a responsive "More"-collapsing navigation, and shortcodes for collapsible code blocks and positioned images.
+Version: 1.0.0
+Requires at least: 6.0
+Tested up to: 6.6
+Requires PHP: 8.0
+License: MIT
+License URI: https://opensource.org/licenses/MIT
+Text Domain: terminal
+Tags: one-column, custom-colors, custom-menu, featured-images, rtl-language-support, threaded-comments, translation-ready, blog
+*/
+
+/*
+Theme styles are loaded individually via wp_enqueue_style() in functions.php,
+matching the original Hugo theme's per-file CSS architecture. This style.css
+holds only the WordPress theme header block above — no runtime styles.
+*/

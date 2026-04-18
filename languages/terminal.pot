@@ -1,0 +1,269 @@
+# Copyright (C) 2026 amd989
+# This file is distributed under the MIT License.
+msgid ""
+msgstr ""
+"Project-Id-Version: Terminal 1.0.0\n"
+"Report-Msgid-Bugs-To: https://github.com/amd989/wordpress-theme-terminal/issues\n"
+"POT-Creation-Date: 2026-04-17\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"X-Domain: terminal\n"
+
+msgid "Terminal Theme"
+msgstr ""
+
+msgid "Colors"
+msgstr ""
+
+msgid "Layout & Navigation"
+msgstr ""
+
+msgid "Post Display"
+msgstr ""
+
+msgid "Table of Contents"
+msgstr ""
+
+msgid "Labels"
+msgstr ""
+
+msgid "Social & SEO"
+msgstr ""
+
+msgid "Analytics"
+msgstr ""
+
+msgid "Accent color"
+msgstr ""
+
+msgid "Background color"
+msgstr ""
+
+msgid "Foreground color"
+msgstr ""
+
+msgid "Container layout"
+msgstr ""
+
+msgid "Default (left-aligned, max-width 864px)"
+msgstr ""
+
+msgid "Full width"
+msgstr ""
+
+msgid "Centered"
+msgstr ""
+
+msgid "Normalize all heading sizes"
+msgstr ""
+
+msgid "Logo text"
+msgstr ""
+
+msgid "Falls back to site title if empty."
+msgstr ""
+
+msgid "Menu items shown before \"More\""
+msgstr ""
+
+msgid "Set to 0 to show all items inline (no \"More\" dropdown)."
+msgstr ""
+
+msgid "\"More\" dropdown label"
+msgstr ""
+
+msgid "Show more"
+msgstr ""
+
+msgid "Site subtitle"
+msgstr ""
+
+msgid "Used as meta description on the homepage."
+msgstr ""
+
+msgid "Default site keywords"
+msgstr ""
+
+msgid "Comma-separated meta keywords fallback."
+msgstr ""
+
+msgid "Show reading time on posts"
+msgstr ""
+
+msgid "Show \"last updated\" on posts"
+msgstr ""
+
+msgid "Auto-detect cover image from post attachments"
+msgstr ""
+
+msgid "Reading time unit"
+msgstr ""
+
+msgid "Word count unit"
+msgstr ""
+
+msgid "min read"
+msgstr ""
+
+msgid "words"
+msgstr ""
+
+msgid "Updated date prefix"
+msgstr ""
+
+msgid "Updated: "
+msgstr ""
+
+msgid "Date format (PHP date() format)"
+msgstr ""
+
+msgid "Enable TOC by default on posts"
+msgstr ""
+
+msgid "Individual posts can override via the Terminal meta box."
+msgstr ""
+
+msgid "TOC heading text"
+msgstr ""
+
+msgid "\"Read more\" label"
+msgstr ""
+
+msgid "Read more"
+msgstr ""
+
+msgid "\"Read other posts\" heading"
+msgstr ""
+
+msgid "Read other posts"
+msgstr ""
+
+msgid "\"Newer posts\" button"
+msgstr ""
+
+msgid "Newer posts"
+msgstr ""
+
+msgid "\"Older posts\" button"
+msgstr ""
+
+msgid "Older posts"
+msgstr ""
+
+msgid "404 message"
+msgstr ""
+
+msgid "Page not found..."
+msgstr ""
+
+msgid "404 back-to-home label"
+msgstr ""
+
+msgid "Back to home page"
+msgstr ""
+
+msgid "Twitter @creator"
+msgstr ""
+
+msgid "Twitter @site"
+msgstr ""
+
+msgid "Include the leading @."
+msgstr ""
+
+msgid "Google Analytics Measurement ID"
+msgstr ""
+
+msgid "e.g. G-XXXXXXXXXX. Leave empty to disable."
+msgstr ""
+
+msgid "Main Navigation"
+msgstr ""
+
+msgid "Menu"
+msgstr ""
+
+msgid "Cover Image"
+msgstr ""
+
+msgid "Click to interact"
+msgstr ""
+
+msgid "Terminal Options"
+msgstr ""
+
+msgid "Cover image URL"
+msgstr ""
+
+msgid "Overrides the featured image. Leave empty to use featured image."
+msgstr ""
+
+msgid "Cover credit"
+msgstr ""
+
+msgid "Show full content on archive/list views"
+msgstr ""
+
+msgid "Hide comments on this post"
+msgstr ""
+
+msgid "Noindex this post (robots meta)"
+msgstr ""
+
+msgid "Force reading time display on this post"
+msgstr ""
+
+msgid "Use site default"
+msgstr ""
+
+msgid "Show TOC"
+msgstr ""
+
+msgid "Hide TOC"
+msgstr ""
+
+msgid "Date format override"
+msgstr ""
+
+msgid "Theme"
+msgstr ""
+
+msgid "made by"
+msgstr ""
+
+msgid "© %1$s %2$s"
+msgstr ""
+
+msgid "%d comment"
+msgid_plural "%d comments"
+msgstr[0] ""
+msgstr[1] ""
+
+msgid "Comments are closed."
+msgstr ""
+
+msgid "No posts yet."
+msgstr ""
+
+msgid "No posts found."
+msgstr ""
+
+msgid "Posts for: #%s"
+msgstr ""
+
+msgid "Posts in: %s"
+msgstr ""
+
+msgid "Posts by %s"
+msgstr ""
+
+msgid "Search results for: %s"
+msgstr ""
+
+msgid "No posts matched your search."
+msgstr ""
+
+msgid "404 — "
+msgstr ""

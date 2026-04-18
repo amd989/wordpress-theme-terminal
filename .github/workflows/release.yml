@@ -1,0 +1,54 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*.*.*'
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Syntax check all PHP files
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.2'
+          tools: none
+
+      - run: find . -name '*.php' -not -path './vendor/*' -print0 | xargs -0 -n1 php -l
+
+      - name: Verify theme version matches tag
+        run: |
+          tag="${GITHUB_REF#refs/tags/v}"
+          header_version=$(grep -E '^\s*Version:' style.css | head -n1 | awk -F: '{print $2}' | tr -d ' \r\t')
+          if [ "$tag" != "$header_version" ]; then
+            echo "::error::Tag $tag does not match style.css Version: $header_version"
+            exit 1
+          fi
+
+      - name: Build theme zip
+        run: |
+          mkdir -p build/terminal
+          rsync -a \
+            --exclude='.git' \
+            --exclude='.github' \
+            --exclude='.gitignore' \
+            --exclude='.editorconfig' \
+            --exclude='docker-compose.yml' \
+            --exclude='build' \
+            ./ build/terminal/
+          cd build
+          zip -r "terminal-${GITHUB_REF#refs/tags/}.zip" terminal
+
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: build/terminal-*.zip
+          draft: false
+          prerelease: ${{ contains(github.ref, '-') }}
+          generate_release_notes: true

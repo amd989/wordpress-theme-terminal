@@ -1,0 +1,113 @@
+:root {
+  --first-tone: var(--accent);
+  --second-tone: color-mix(in srgb, var(--accent) 70%, transparent);
+  --comment: color-mix(in srgb, var(--foreground) 50%, transparent);
+}
+
+code[class*="language-"],
+pre[class*="language-"] {
+  color: var(--foreground);
+  background: none;
+  text-shadow: none;
+  font-family: "Fira Code", Monaco, Consolas, "Ubuntu Mono", monospace;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+  tab-size: 4;
+  hyphens: none;
+}
+
+pre[class*="language-"] {
+  padding: 1em;
+  margin: 0;
+  overflow: auto;
+}
+
+:not(pre) > code[class*="language-"],
+pre[class*="language-"] {
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+}
+
+:not(pre) > code[class*="language-"] {
+  padding: 0.1em;
+  border-radius: 0.3em;
+  white-space: normal;
+}
+
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+  color: var(--comment);
+}
+
+.token.punctuation,
+.token.operator,
+.token.entity {
+  color: var(--foreground);
+}
+
+.token.namespace {
+  opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.constant,
+.token.symbol,
+.token.deleted {
+  color: var(--first-tone);
+}
+
+.token.boolean,
+.token.number {
+  color: var(--first-tone);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+  color: var(--foreground);
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+  color: var(--second-tone);
+}
+
+.token.function,
+.token.class-name,
+.token.variable,
+.token.regex,
+.token.important {
+  color: var(--first-tone);
+}
+
+.token.important,
+.token.bold {
+  font-weight: bold;
+}
+
+.token.italic {
+  font-style: italic;
+}
+
+.token.url {
+  color: var(--first-tone);
+  text-decoration: underline;
+}
+
+/* Line highlight plugin */
+pre[data-line] {
+  position: relative;
+}
+
+.line-highlight {
+  background: color-mix(in srgb, var(--foreground) 5%, transparent);
+}
